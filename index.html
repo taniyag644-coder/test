@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Notes Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        a.button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+        a.button:hover {
+            background: #003f82;
+        }
+
+
+        .dark {
+    background:#111;
+    color:white;
+}
+.dark .box,
+.dark .card {
+    background:#222;
+    color:white;
+}
+
+    </style>
+
+    <button onclick="toggleDarkMode()" style="float:right;padding:7px 14px;background:white;color:#0056b3;border-radius:5px;border:none;font-weight:bold;cursor:pointer;">
+🌙 Light Mode
+</button>
+
+</head>
+<body class="dark">
+
+    <header>
+        <h1>📘 My Study Notes Website</h1>
+        <p>All Subjects • All Units • One Place</p>
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>✅ How to Use</h2>
+            <ul>
+                <li>Click on Subjects</li>
+                <li>Select a subject (like DSA, Python, DSTL, etc.)</li>
+                <li>Choose a unit</li>
+                <li>Read notes anytime</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>✅ Why this Website?</h2>
+            <p>This website helps students to keep all  semester notes in one organized place.
+               Instead of searching in PDFs, WhatsApp messages, screenshots or notebooks,
+               Students can access everything with one click.</p>
+        </div>
+
+        <div class="box">
+            <h2>✅ Benefits</h2>
+            <ul>
+                <li>Easy to revise before exams</li>
+                <li>No need to carry notebooks everywhere</li>
+                <li>Notes are safe online & never lost</li>
+                <li>Clean subject-wise & unit-wise structure</li>
+                <li>Can share with friends & juniors</li>
+                <li>Can add important links, PYQs, images, PDFs, videos</li>
+            </ul>
+        </div>
+
+        
+        <div class="box" style="text-align:center;">
+            <a href="subjects.html" class="button">📚 Go to Subjects</a>
+        </div>
+
+    </div>
+
+</body>
+
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+
+
+<footer style="background:#003f82;color:white;text-align:center;padding:12px;margin-top:30px;">
+    Developed By: <b>TANIYA GUPTA</b> | B.Tech (Sem-3) | Notes Website
+</footer>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+
+</html>
